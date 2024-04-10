@@ -1,0 +1,159 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgba(246, 246, 250, 1);
+}
+
+h1, h2, h3, h4, p, li, ul, ol, tr, td, th, table{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 40px;
+    background-color:white;
+}
+
+.profile-pic{
+    width: 370px;
+    height: 370px;
+    margin-top: 40px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin-left: 44px;
+    gap: 40px;
+}
+
+.secondary-container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(224, 235, 254, 1);
+    max-width: 370px;
+    gap: 40px;
+}
+
+.secondary-element{
+    margin: 0 40px;
+    font-size: 14px;
+}
+
+.secondary-element h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.secondary-element li{
+    list-style-type: disc; /* Change the bullet style to filled circles */
+    color: #333;
+    list-style-position:inside;
+    margin-bottom: 4px;
+}
+.contacts{
+    border-collapse: separate;
+    margin-top: -8px;
+    border-spacing: 8px;
+}
+.contacts-bold{
+    font-weight: bold;
+}
+.contacts td{
+    margin-left: 8px;
+}
+.text-info{
+    font-size: 14px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.text-info h3{
+    font-weight: bold;
+}
+.text-info h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.text-info p{
+    text-shadow: 2px 2px 5px gray;
+}
+.main-element{
+    font-size: 14px;
+    max-width: 576px;
+}
+.main-element h2{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.main-element h3{
+    margin-bottom: 12px;
+}
+.main-element h4{
+    margin-bottom: 8px;
+    font-size: 12px;
+    color: rgba(168, 168, 168, 1);
+    font-weight: normal;
+}
+.main-element li{
+
+    list-style-position:inside;
+    margin-bottom: 4px;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.project ol {
+    display: flex; /* Set ol as flex container */
+    flex-direction: column; /* Stack list items vertically */
+}
+
+.project li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    counter-increment: list-item; /* Increment the counter for each list item */
+}
+
+.project li::before {
+    content: counter(list-item) "."; /* Use counter for list item numbering */
+    margin-right: 14px; /* Adjust spacing between number and content */
+    font-weight: bold;
+}
+
+.underline {
+    color: rgba(168, 168, 168, 1);
+    flex: 1;
+    border-style: dashed;
+    margin: 0;
+    margin-top: auto;
+}
+
+.main-info-text{
+    color: rgba(109, 155, 245, 1);
+}
+.main-work-exp{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.work-exp-spec{
+    display: flex;
+    gap: 0.5em;
+}
+.vertical-hr {
+    border-left: 0.15em solid black;
+    height: 1em; 
+    margin: 0 0.5em;
+    display: initial;
+}

@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>My Resume</title>
 </head>
 <body>
     <!--Wrapper-->
-    <div>
+    <div class="wrapper">
         <!--main content-->
-        <section>
+        <section class="main-container">
             <!--Intro-->
-            <div>
+            <div class="text-info">
                 <h3>Full-Stack Developer</h3>                
                 <h1>Savchenko Volodymyr</h1>
-
                 <p>
                     I'm a full-stack developer passionate about crafting seamless digital experiences from front-end to back-end. 
                     With expertise in both client-side and server-side technologies, I thrive on turning innovative ideas into functional,
@@ -22,65 +25,103 @@
                 </p>
             </div>
             <!--Projects-->
-            <div>
+            <div class="main-element project">
                 <h2>My Projects</h2>
                 <ol>
-                    <li><a href="https://github.com/VoranReygetov/ToyBox-WEB">ToyBox shop [HTML], [CSS]</a></li>
-                    <li><a href="https://github.com/VoranReygetov/Django">Django project [HTML], [CSS], [Django]</a></li>
-                    <li><a href="https://github.com/VoranReygetov/MobilityAssist">MobilityAssist page [HTML], [CSS], [ASP.net]</a></li>
+                    <li>
+                        <a href="https://github.com/VoranReygetov/ToyBox-WEB">ToyBox shop</a>
+                        <hr class="underline">
+                        <p>[HTML], [CSS]</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/VoranReygetov/Django">Django project</a>
+                        <hr class="underline">
+                        <p>[HTML], [CSS], [Django]</p>
+                    </li>
+                    <li>
+                        <a href="https://github.com/VoranReygetov/MobilityAssist">MobilityAssist page</a>
+                        <hr class="underline">
+                        <p>[HTML], [CSS], [ASP.net]</p>
+                    </li>
                 </ol>
             </div>
             <!--Work Exp-->
-            <div>
-                <h2>Work experience</h2>
-                <h3>Front-End Developer Freelance</h3>
-                <h4>September 2019 - up to now   |   Country</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
-                    <li>Risus commodo viverra maecenas. </li>                        
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </li>
-                </ul>
-                <h3>Manager Banderogusak & Co.</h3>
-                <h4>March 2015 - October 2018   |   Country</h4>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.</li>
-                    <li>Quis ipsum suspendisse ultrices gravida.</li>
-                    <li>Risus commodo viverra maecenas.</li>
-                </ul>
-                <h3>Manager BestUA Corp.</h3>
-                <h4>June 2014 - February 2015   |   Country</h4>
+            <div class="main-element main-work-exp">
+                <div>
+                    <h2>Work experience</h2>
+                    <div class="work-exp-spec">
+                        <h3>Front-End Developer</h3><h3 class="main-info-text">Freelance</h3>
+                    </div>
+                    <h4>September 2019 - up to now<div class="vertical-hr"></div>Country</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li> 
+                        <li>Risus commodo viverra maecenas. </li>                        
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod. </li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="work-exp-spec">
+                        <h3>Manager
+                            <h3 
+                            class="main-info-text">Banderogusak & Co.
+                            </h3>
+                        </h3>
+                    </div>
+                    <h4>March 2015 - October 2018<div class="vertical-hr"></div>Country</h4>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore magna aliqua.</li>
+                        <li>Quis ipsum suspendisse ultrices gravida.</li>
+                        <li>Risus commodo viverra maecenas.</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="work-exp-spec">
+                        <h3>Manager 
+                            <h3 class="main-info-text">
+                                BestUA Corp.
+                            </h3>
+                        </h3>
+                    </div>
+                <h4>June 2014 - February 2015<div class="vertical-hr"></div>Country</h4>
                 <ul>
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
                     <li>Quis ipsum suspendisse ultrices gravida.</li>
                     <li>Risus commodo viverra maecenas.</li>
                 </ul>
+                </div>
             </div>
             <!--Education-->
-            <div>
+            <div class="main-element">
                 <h2>Education</h2>
-                <h3>
+                <h3 class="main-info-text">
                     National Technical University of Ukraine
                     “Igor Sikorsky Kyiv Polytechnic Institute”
                 </h3>
-                <h4>Information technologies</h4>
-                <h4>September 2009 - June 2014   |   Country</h4>
+                <h3>Information technologies</h4>
+                <h4>September 2021 - June 2025<div class="vertical-hr"></div>Country</h4>
             </div>
         </section>
         <!--secondary-->
-        <section>
+        <section class="secondary-container">
             <!--Image-->
-            <img style="width: 20%; height: auto;" src="img.png" alt="">
+            <img class="profile-pic" src="img.png" alt="">
             <!--Contacts-->
-            <div>
+            <div class="secondary-element">
                 <h2>Contacts</h2>
-                <ul>
-                    <li>C: +380000000</li>
-                    <li>E: test@gmail.com</li>
-                </ul>
-            </div>
+                <table class="contacts">
+                    <tr>
+                        <td class="contacts-bold">C:</td>
+                        <td>+380000000</td>
+                    </tr>
+                    <tr>
+                        <td class="contacts-bold">E:</td>
+                        <td><a href="#">test@gmail.com</a></td>
+                    </tr>
+                </table>
+            </div>            
             <!--Tech Skills-->
-            <div>
+            <div class="secondary-element">
                 <h2>Tech Skills</h2>
                 <ul>
                     <li>HTML</li>
@@ -93,7 +134,7 @@
                 </ul>
             </div>
             <!--Soft Skills-->
-            <div>
+            <div class="secondary-element">
                 <h2>Soft Skills</h2>
                 <ul>
                     <li>Scrum</li>
